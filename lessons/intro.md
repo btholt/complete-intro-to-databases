@@ -2,25 +2,78 @@
 path: "/intro"
 title: "Introduction"
 order: "1A"
-section: "The First Section"
-description: "this is the description that will show up in social shares"
+section: "Welcome"
+description: "Welcome to the Complete Intro to Databases! Brian goes over what you need to know to get started."
 ---
 
-This is page one.
+# Who is this course for?
 
-## Check out this image
+This course is for anyone who wants to understand the various sorts of databases that are available to them, how to use a few of them, and when to choose which one.
 
-![Gatsby Logo](./images/logo.svg)
+In order to get the most out of this course, you should be comfortable with a command line prompt and a little bit of programming. If you are not familiar with a command line prompt, [I taught a course on it here][command-line] that if you take that will more than get you ready for this course. If you are not familiar with programming, [I have course on that too][web-dev].
 
-## Check out a code sample
+All the programming samples will be in JavaScript but if you code in something else like Python or Ruby these code samples should look familiar enough that you should be fine. The code won't be the focus of the samples, the database interactions will be.
 
-```js
-const x = 2 + 2;
-```
+[command-line]: https://frontendmasters.com/courses/linux-command-line/
+[web-dev]: https://frontendmasters.com/courses/web-development-v2/
 
-- This is a link to [Frontend Masters][fem].
-- This another link to [Brian Holt's Twitter](https://twitter.com/holtbt).
-- Here's another link to a [site built with this starter][containers].
+# Outline
 
-[fem]: https://www.frontendmasters.com
-[containers]: https://btholt.github.io/complete-intro-to-containers/
+- Introduction
+- When you need a database
+- SQL
+  - sqlite
+  - PostgreSQL
+  - MySQL / MariaDB
+  - SQL Server
+- Starting a PostgreSQL server
+- Set Math / Writing SQL
+  - JOIN
+  - UNION
+  - INNER / OUTER
+  - LEFT / RIGHT
+  - WHERE
+  - FROM
+  - AS
+  - AND
+  - ORDER BY
+  - GROUP BY
+  - LIMIT
+  - COUNT
+  - INSERT
+- ACID
+- Transactions
+- Indexes
+- SQL Injection
+- Brief overview of SQL ops
+  - Primary / secondary
+- Stored Procedures
+- JSON Store
+- Extensions
+  - Hasura
+- NoSQL
+  - MongoDB
+  - Cassandra
+- Starting a MongoDB server
+- Query MongoDB
+  - CRUD
+  - Change feed
+  - Map / reduce
+- Brief overview of MongoDB ops
+  - Primary / secondary
+  - Sharding
+  - Elections
+- Caching
+  - Redis
+- Graph database
+  - Neo4j
+- Starting a graph database
+- Choosing a database
+- ORMs?
+- Brief overview of other tools available
+  - Messaging
+    - RabbitMQ
+    - Kafka
+  - MapReduce Frameworks
+    - Hadoop
+- Conclusion
