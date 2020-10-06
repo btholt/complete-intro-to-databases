@@ -1,25 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Course",
-    subtitle: "For making great content",
+    title: "Complete Intro to Databases",
+    subtitle: "",
     description:
-      "This is the description that will show up when people share as well as on search engines",
+      "Get a complete intro to reading and writing to database from Brian Holt on MongoDB, PostgreSQL, Redis, and Neo4j",
     keywords: [
-      "this is",
-      "a list of keywords and phrase",
-      "that search engines",
-      "will index your page for"
-    ]
+      "node.js",
+      "javascript",
+      "mongodb",
+      "postgresql",
+      "sql",
+      "nosql",
+      "neo4j",
+      "redis",
+      "caching",
+      "graph",
+    ],
   },
-  //pathPrefix: "/my-repo-name", // if you're using GitHub Pages, put the name of the repo here with a leading slash
+  pathPrefix: "/complete-intro-to-databases",
   plugins: [
     `gatsby-plugin-layout`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/lessons`,
-        name: "markdown-pages"
-      }
+        name: "markdown-pages",
+      },
     },
     `gatsby-plugin-react-helmet`,
     {
@@ -34,11 +40,11 @@ module.exports = {
             options: {
               maxWidth: 800,
               linkImagesToOriginal: true,
-              sizeByPixelDensity: false
-            }
-          }
-        ]
-      }
-    }
-  ]
+              sizeByPixelDensity: false,
+            },
+          },
+        ],
+      },
+    },
+  ],
 };

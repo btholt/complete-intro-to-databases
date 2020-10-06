@@ -50,9 +50,10 @@ Good so far? Great! Try running `db.pets.count()`. You'll see it returns `1` bec
 Let's insert a lot of documents. Like, 10,000. Since we're querying with JavaScript, we can write some Array fanciness to generate an array of random objects. Copy and paste this into the MongoDB console.
 
 ```javascript
-db.pets.insert(
-  Array.from({ length: 1000000 }).map((_, index) => ({
+db.pets.insertMany(
+  Array.from({ length: 10000 }).map((_, index) => ({
     name: [
+      "Luna",
       "Fido",
       "Fluffy",
       "Carina",
@@ -75,6 +76,7 @@ db.pets.insert(
       "Tabby",
       "Iguana",
     ][index % 7],
+    index: index,
   }))
 );
 ```
