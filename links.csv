@@ -1,0 +1,11 @@
+order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10,link11
+1A,Introduction,https://frontendmasters.com/courses/linux-command-line/,https://frontendmasters.com/courses/web-development-v2/,,,,,,,,,,
+1B,Installation Notes,https://frontendmasters.com/courses/complete-intro-containers/,https://www.docker.com/products/docker-desktop,https://brew.sh/,https://docs.microsoft.com/en-us/windows/package-manager/winget/#install-winget,https://chocolatey.org/,https://www.mongodb.com/try/download/community,https://sqlite.org/download.html,https://www.postgresql.org/download/,https://neo4j.com/download-center/#community,https://redis.io/download,https://nodejs.org/download/release/v12.18.4/,https://github.com/nvm-sh/nvm
+1C,Terminology,,,,,,,,,,,,
+2A,NoSQL,,,,,,,,,,,,
+2B,MongoDB,https://www.jetbrains.com/lp/devecosystem-2020/databases/,https://docs.mongodb.com/manual/reference/bson-types/,,,,,,,,,,
+2C,Querying MongoDB,,,,,,,,,,,,
+2D,Updating MongoDB,https://docs.mongodb.com/manual/reference/operator/update/#id1,,,,,,,,,,,
+2E,Indexes in MongoDB,https://lucene.apache.org/solr/,https://docs.mongodb.com/manual/tutorial/specify-language-for-text-index/,https://docs.mongodb.com/manual/reference/operator/query/text/index.html,,,,,,,,,
+2F,Write a Node.js app with MongoDB,https://github.com/btholt/db-samples,,,,,,,,,,,
+2G,MongoDB Ops,https://www.mongodb.com/cloud/atlas,https://aws.amazon.com/documentdb/,,,,,,,,,,
