@@ -9,3 +9,4 @@ order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10,l
 2E,Indexes in MongoDB,https://lucene.apache.org/solr/,https://docs.mongodb.com/manual/tutorial/specify-language-for-text-index/,https://docs.mongodb.com/manual/reference/operator/query/text/index.html,,,,,,,,,
 2F,Write a Node.js app with MongoDB,https://github.com/btholt/db-samples,,,,,,,,,,,
 2G,MongoDB Ops,https://www.mongodb.com/cloud/atlas,https://aws.amazon.com/documentdb/,,,,,,,,,,
+3A,Intro to SQL Database,https://stackoverflow.com/a/7580013,,,,,,,,,,,
