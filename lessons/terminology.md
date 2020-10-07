@@ -14,6 +14,8 @@ A database is a place to store data. Another way to think about this is that it 
 
 A query is a command you send to a database to get it to do something, whether that's to get information out of the database or to add/update/delete something in the database. It can also aggregate information from a database into some sort of overview.
 
+## Schema
+
 ## What are the types of databases
 
 ## Relational Database
