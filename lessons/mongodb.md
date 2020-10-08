@@ -2,7 +2,7 @@
 path: "/mongodb"
 title: "MongoDB"
 order: "2B"
-description: "MongoDB a document-based NoSQL database that allows developers to write unstructured data to be queried later. Brian goes into what this means for a developer and when you might want to use it"
+description: "MongoDB is a document-based NoSQL database that allows developers to write unstructured data to be queried later. Brian goes into what this means for a developer and when you might want to use it"
 section: "NoSQL"
 ---
 
@@ -12,10 +12,11 @@ If you look through MongoDB's history, you will find some rough patches. There w
 
 ## Let's get MongoDB going
 
-Let's drive into it. If you're running Docker like me, run the following commands
+Let's dive into it. If you're running Docker like me, run the following commands
 
 ```bash
 docker run --name test-mongo -dit -p 27017:27017 --rm mongo:4.4.1
+
 docker exec -it test-mongo bash
 ```
 
