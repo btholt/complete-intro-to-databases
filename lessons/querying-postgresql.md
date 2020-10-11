@@ -107,3 +107,11 @@ UPDATE users SET full_name= 'Brian Holt', email = 'lol@example.com' WHERE user_i
 - You just comma separate to do multiple sets.
 - Make sure you use single quotes. Double quotes cause errors.
 - RETURNING \* is optional. This is basically saying "do the update and return to me the records after they've been updated.
+
+## DELETE
+
+This works as you would expect based on what we've done before
+
+```sql
+DELETE FROM users WHERE user_id = 1000;
+```
