@@ -13,3 +13,5 @@ order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10,l
 3B,PostgreSQL,https://www.postgresql.org/docs/9.5/datatype.html#DATATYPE-TABLE,,,,,,,,,,,
 3C,Querying PostgreSQL,,,,,,,,,,,,
 3D,Complex SQL Queries,https://commons.wikimedia.org/wiki/File:SQL_Joins.svg,,,,,,,,,,,
+3E,JSON in PostgreSQL,,,,,,,,,,,,
+3F,Node.js App with PostgreSQL,https://github.com/btholt/db-samples,,,,,,,,,,,

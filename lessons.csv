@@ -13,3 +13,5 @@ path,title,order,description,section
 "/postgresql","PostgreSQL","3B","PostgreSQL is a relational database that lets developers write amazing apps. Brian goes over how to get PostgreSQL started on your computer and help you write your first query.","SQL"
 "/querying-postgresql","Querying PostgreSQL","3C","SQL is a very flexible and expressive way to describe what data you want out of a database. In this section Brian talks about the various ways to read from and modify a database using SQL.","SQL"
 "/complex-sql-queries","Complex SQL Queries","3D","Brian dives into how to compound queries, joins, unions, group bys, and other ways to get obtain powerful results with the expressiveness of SQL","SQL"
+"/json-in-postgresql","JSON in PostgreSQL","3E","One of PostgreSQL's super powers is that it's able to store and query JSON","SQL"
+"/nodejs-app-with-postgresql","Node.js App with PostgreSQL","3F","To help transfer learnings from the command line to code, Brian shows you how to quickly write an app for our message board tables using Node.js","SQL"
