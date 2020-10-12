@@ -15,7 +15,7 @@ Let's start by getting a PostgreSQL container going. I'm going to use version 13
 ```bash
 docker run --name test-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d --rm postgres:13.0
 
-docker run -dit --name test-postgres --rm -u postgres postgres:13.0 psql
+docker exec -it -u postgres test-postgres psql
 ```
 
 We have to give it a password or PostgreSQL won't start by default. Don't worry, this isn't how'd you start it in production.
