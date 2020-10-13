@@ -15,3 +15,5 @@ path,title,order,description,section
 "/complex-sql-queries","Complex SQL Queries","3D","Brian dives into how to compound queries, joins, unions, group bys, and other ways to get obtain powerful results with the expressiveness of SQL","SQL"
 "/json-in-postgresql","JSON in PostgreSQL","3E","One of PostgreSQL's super powers is that it's able to store and query JSON","SQL"
 "/nodejs-app-with-postgresql","Node.js App with PostgreSQL","3F","To help transfer learnings from the command line to code, Brian shows you how to quickly write an app for our message board tables using Node.js","SQL"
+"/hasura","Hasura","3G","Brian gives a quick overview of a powerful tool to use with PostgreSQL, Hasura. Hasura is a service you will put in your cluster so you can query your PostgreSQL database with GraphQL.","SQL"
+"/postgresql-ops","PostgreSQL Ops","3H","While it is not important for a developer to know how to precisely manage a database cluster in production, a developer does need to know a bit how about how it is done so they can plan accordingly when they write their code.","SQL"
