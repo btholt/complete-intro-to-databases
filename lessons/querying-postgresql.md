@@ -8,7 +8,7 @@ section: "SQL"
 
 You'll find there's a lot of depth to SQL. There are people who most of their jobs is just writing SQL. But let's hop into the basics here. First thing I want to do is insert some dummy data into our users database.
 
-[Click here][sql] for a list of a 1000 users. You can literally just copy this whole thing and paste it into your command line connection to PostgreSQL (psql) and it'll work. There's a more elegant way to load it from the command line but we're in Docker and it's annoying so I'd just copy/paste it.
+[Click here][sql] for a sample set of tables for your database. What this query will do is drop all your existing tables and then re-set them up. At any time you can re-run this to get a fresh copy of your tables. You can literally just copy this whole thing and paste it into your command line connection to PostgreSQL (psql) and it'll work. There's a more elegant way to load it from the command line but we're in Docker and it's annoying so I'd just copy/paste it. It'll probably take 90 seconds to run.
 
 ## SELECT
 
@@ -115,3 +115,5 @@ This works as you would expect based on what we've done before
 ```sql
 DELETE FROM users WHERE user_id = 1000;
 ```
+
+[sql]: https://btholt.github.io/complete-intro-to-databases/sample-postgresql.sql

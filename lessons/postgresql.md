@@ -13,9 +13,9 @@ So we examined a bit of the general relational databases in the previous section
 Let's start by getting a PostgreSQL container going. I'm going to use version 13.0 (the latest container available) and I'd recommend for this tutorial you do the same. While newer ones might be available, this is the one that will work with this tutorial.
 
 ```bash
-docker run --name test-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d --rm postgres:13.0
+docker run --name my-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d --rm postgres:13.0
 
-docker exec -it -u postgres test-postgres psql
+docker exec -it -u postgres my-postgres psql
 ```
 
 We have to give it a password or PostgreSQL won't start by default. Don't worry, this isn't how'd you start it in production.
@@ -43,14 +43,14 @@ By default you connect to database "postgres" which is just a default database n
 So go ahead and run your first query here to create a new database. **Make sure you include the `;` at the end.** While the semi-colon is optional in JS it is not in SQL! It thinks you're still going until you include that `;`.
 
 ```sql
-CREATE DATABASE message_board;
+CREATE DATABASE message_boards;
 ```
 
 You should see `CREATE DATABASE` underneath that as a confirmation that it went through. Great! Now we have a new database to switch to, so let's do that.
 
 ```sql
-\c message_board;
--- \connect message_board works too
+\c message_boards;
+-- \connect message_boards works too
 ```
 
 This `\` notation is how you give admin commands to PostgreSQL through its `psql` CLI which is what we're using right now. In this case we're saying connect to this new database. Let's try a few other commands real quick!

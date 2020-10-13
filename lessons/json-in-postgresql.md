@@ -12,7 +12,7 @@ However PostgreSQL has a magic superpower here: the JSON data type. This allows 
 
 Let's make an example for our message board. You want to add a new feature that allows users to do rich content embeds in your message board. For starters they'll be able to embed polls, images, and videos but you can imagine growing that in the future so they can embed tweets, documents, and other things we haven't dreamed up yet. You want to maintain that future flexibility.
 
-This would be possible to model with a normal schema but it'd come out pretty ugly and hard to understand, and it's impossible to anticipate all our future growth plans now. This is where the `JSON` data type is going to really shine. Run these queries.
+This would be possible to model with a normal schema but it'd come out pretty ugly and hard to understand, and it's impossible to anticipate all our future growth plans now. This is where the `JSON` data type is going to really shine. These are the queries we ran to create them. (you don't need to run them again)
 
 ```sql
 DROP TABLE IF EXISTS rich_content;
