@@ -121,6 +121,8 @@ RETURN q.name;
 
 ## Constraint
 
+Just like in the other databases you can enforce uniqueness which can be helpful. Here's how you'd do that (though a bad idea in this case because there are lots of actors, actresses, and directors named the same thing as there are multiple movies called the same thing.)
+
 ```cql
 CREATE CONSTRAINT ON (a:Person) ASSERT a.name IS UNIQUE;
 CREATE CONSTRAINT ON (a:Movie) ASSERT a.title IS UNIQUE;
