@@ -19,3 +19,7 @@ path,title,order,description,section
 "/postgresql-ops","PostgreSQL Ops","3H","While it is not important for a developer to know how to precisely manage a database cluster in production, a developer does need to know a bit how about how it is done so they can plan accordingly when they write their code.","SQL"
 "/graph-databases","Graph Databases","4A","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Graph"
 "/neo4j","Neo4j","4B","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Graph"
+"/neo4j-browser","Neo4j Browser","4C","An amazing tool that Neo4j provides dev is a built in browser that allows you run queries and visualize your graph","Graph"
+"/complex-neo4j-queries","Complex Neo4j Queries","4D","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Graph"
+"/nodejs-app-with-neo4j","Node.js App with Neo4j","4E","Time to put some of that graph magic into practice! Put together with Brian an app to find the smallest path between two people in a graph.","Graph"
+"/neo4j-ops","Neo4j Ops","4F","Brian talks for a second about what things to consider with Neo4j running in production.","Graph"
