@@ -23,3 +23,5 @@ order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10,l
 4D,Complex Neo4j Queries,https://btholt.github.io/complete-intro-to-databases/sample-neo4j.cql,https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon,,,,,,,,,,
 4E,Node.js App with Neo4j,,,,,,,,,,,,
 4F,Neo4j Ops,,,,,,,,,,,,
+5A,Key-Value Store,,,,,,,,,,,,
+5B,Redis,https://redis.io/commands#hash,https://redis.io/topics/data-types-intro#redis-sorted-sets,https://btholt.github.io/four-semesters-of-cs-part-two/bloom-filters,https://redis.io/topics/data-types-intro#hyperloglogs,https://redis.io/topics/streams-intro,,,,,,,

@@ -23,3 +23,5 @@ path,title,order,description,section
 "/complex-neo4j-queries","Complex Neo4j Queries","4D","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Graph"
 "/nodejs-app-with-neo4j","Node.js App with Neo4j","4E","Time to put some of that graph magic into practice! Put together with Brian an app to find the smallest path between two people in a graph.","Graph"
 "/neo4j-ops","Neo4j Ops","4F","Brian talks for a second about what things to consider with Neo4j running in production.","Graph"
+"/key-value-store","Key-Value Store","5A","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Key-Value Store"
+"/redis","Redis","5B","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Key-Value Store"
