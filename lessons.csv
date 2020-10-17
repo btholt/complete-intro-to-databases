@@ -25,3 +25,7 @@ path,title,order,description,section
 "/neo4j-ops","Neo4j Ops","4F","Brian talks for a second about what things to consider with Neo4j running in production.","Graph"
 "/key-value-store","Key-Value Store","5A","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Key-Value Store"
 "/redis","Redis","5B","Graph databases are great when you need to define relations between objects that can have complex webs of relations especially for things like social networks.","Key-Value Store"
+"/more-redis-concepts","More Redis Concepts","5C","This course only covers some of Redis's core capabilties but there a few more use cases a developer should know about Redis.","Key-Value Store"
+"/nodejs-app-with-redis","Node.js App with Redis","5D","Take the learnings from how to use Redis as a key-value store and cache from the command line to code! Brian whips up two examples of how and why you'd want to use Redis with Node.js.","Key-Value Store"
+"/redis-ops","Redis Ops","5E","Learn a few things about running Redis and how you as a coder can maximize your effectiveness with Redis.","Key-Value Store"
+"/conclusion","Conclusion","6A","Brian wraps up the course and says his parting, wise words.","Conclusion"
