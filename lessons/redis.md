@@ -239,7 +239,7 @@ If you're keen to learn more [see here][sorted-sets].
 
 Best name ever.
 
-So HLLs are _very similar_ conceptually to a bloom filter which you've never heard of, I already teach about in one my courses! [See here][bloom-filter].
+So HLLs are _very similar_ conceptually to a bloom filter which if you've never heard of, I already teach about in one my courses! [See here][bloom-filter].
 
 The general gist if you have an extremely large set of data and need the ability to say something is definitely _not_ in the data set but don't care about false positives. That is to say you need the ability to say "this is not in the data set" and you have tolerance for the algorithm to say "this is not in the data set" even when it was some times. HLLs in Redis allow you to do that. HLLs have a very low false positive rate and a small memory footprint even on large data sets so if you have a problem that fits its use case it's definitely something to consider.
 
@@ -249,7 +249,7 @@ The general gist if you have an extremely large set of data and need the ability
 
 Streams are fairly new and not something I've found use for. If you're adding a lot of data to a source and need to be able to subscribe to updates for it (maybe like log streams or readings from an IoT device like a temperature sensor) then this could be useful for you.
 
-[See here][streams]
+[See here][streams].
 
 [hash]: https://redis.io/commands#hash
 [sorted-sets]: https://redis.io/topics/data-types-intro#redis-sorted-sets
