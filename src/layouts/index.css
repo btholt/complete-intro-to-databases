@@ -62,6 +62,12 @@
 .navbar-brand-image {
   width: 100%;
   max-width: 650px;
+  transition: filter ease-in-out 0.15s;
+}
+
+.navbar-brand-image:hover,
+.navbar-brand-image:active {
+  filter: invert(70%);
 }
 
 .lesson {

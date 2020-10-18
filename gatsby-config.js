@@ -3,7 +3,7 @@ module.exports = {
     title: "Complete Intro to Databases",
     subtitle: "",
     description:
-      "Get a complete intro to reading and writing to database from Brian Holt on MongoDB, PostgreSQL, Redis, and Neo4j",
+      "Complete intro to using databases from Brian Holt on MongoDB, PostgreSQL, Redis, and Neo4j",
     keywords: [
       "node.js",
       "javascript",
