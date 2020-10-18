@@ -2,6 +2,8 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Card from "../components/TOCCard";
 
+import hero from "../../static/WORDMARK-Small.png";
+
 import "./index.css";
 
 const IndexPage = () => (
@@ -32,11 +34,14 @@ const IndexPage = () => (
         }
       }
     `}
-    render={props => (
+    render={(props) => (
       <div className="index">
-        <div className="jumbotron gradient">
-          <h1>{props.site.siteMetadata.title}</h1>
-          <h2>{props.site.siteMetadata.subtitle}</h2>
+        <div className="jumbtron-image-container">
+          <img
+            src={hero}
+            alt={props.site.siteMetadata.title}
+            className="jumbotron-image"
+          />
         </div>
 
         <Card

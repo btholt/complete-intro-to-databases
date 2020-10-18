@@ -1,15 +1,14 @@
 import React from "react";
 import Link from "gatsby-link";
 import * as helpers from "../util/helpers";
+import toc from "../../static/TOC.png";
 import "./TOCCard.css";
 
 const sortFn = helpers.sorter;
 
 const LessonCard = ({ content, title }) => {
-  console.log(sortFn);
-
   const sections = content
-    .map(lesson => lesson.node.frontmatter)
+    .map((lesson) => lesson.node.frontmatter)
     .sort(sortFn)
     .reduce((acc, lesson) => {
       if (!acc.length) {
@@ -29,14 +28,16 @@ const LessonCard = ({ content, title }) => {
 
   return (
     <div className="main-card">
-      <h1 className="lesson-title gradient">{title}</h1>
+      <h1 className="lesson-title gradient">
+        <img className="lesson-title-image" src={toc} alt={title} />
+      </h1>
       <div className="lesson-content">
         <ol className="sections-name">
-          {sections.map(section => (
+          {sections.map((section) => (
             <li key={section[0].section}>
               <h3 className="lesson-section-title">{section[0].section}</h3>
               <ol>
-                {section.map(lesson => (
+                {section.map((lesson) => (
                   <li key={lesson.path}>
                     <Link to={lesson.path}>{lesson.title}</Link>
                   </li>

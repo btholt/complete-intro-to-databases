@@ -10,6 +10,7 @@
 .lesson-title {
   font-size: 20px;
   padding: 15px 30px;
+  text-align: center;
 }
 
 .lesson-content {
@@ -23,4 +24,9 @@
 
 .lesson-section-title {
   margin-top: 25px;
+}
+
+.lesson-title-image {
+  width: 100%;
+  max-width: 430px;
 }

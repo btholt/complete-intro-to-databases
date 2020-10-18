@@ -1,5 +1,7 @@
 body {
   background-color: #eee;
+  background-image: url(./../../static/WALLPAPER.jpg);
+  background-repeat: repeat;
 }
 
 .index {
@@ -10,6 +12,19 @@ body {
 }
 
 .index .jumbotron {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.jumbotron-image {
+  width: 105%;
+  position: relative;
+  left: -2.5%;
+}
+
+.jumbtron-image-container {
+  position: relative;
+  margin-bottom: 25px;
 }
 
 .example-table {

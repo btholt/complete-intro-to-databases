@@ -1,10 +1,16 @@
 .gradient {
-  background: rgb(96, 108, 136);
+  background: #0066cc;
   background: linear-gradient(
     to bottom,
-    rgb(96, 108, 136) 0%,
-    rgb(63, 76, 107) 100%
+    #990066 00%,
+    #660099 60%,
+    #0066cc 100%
   );
+}
+
+.navbar-brand-image,
+.lesson-title-image {
+  filter: invert(100%);
 }
 
 .navbar {
@@ -51,6 +57,11 @@
 
 .navbar-brand.navbar-brand:focus {
   color: white;
+}
+
+.navbar-brand-image {
+  width: 100%;
+  max-width: 650px;
 }
 
 .lesson {
