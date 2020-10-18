@@ -11,8 +11,7 @@ In this course we will be using five different databases: MongoDB, sqlite3, Post
 In every case, make sure you are getting the same version I am using. If you don't you will likely run into problems as the syntax and queries can change from version to version. Here are the version I'm using for this course.
 
 - MongoDB v4.4.1
-- sqlite3 v3.3.0
-- PostgreSQL v12.4
+- PostgreSQL v13.0
 - Neo4j v4.1.1
 - Redis v6.0.8
 
@@ -33,8 +32,7 @@ For Linux, you will be using whatever your distro's package manager is. If you'r
 You can just head to all of the websites and install them yourself! I prefer to do this through a package manager but there's no reason you can't do it this way if you prefer. Here are all the correct URLs for you. Make sure you downloading the version I'm listing or you may have issues (it likely won't be the current version.)
 
 - [MongoDB][mongodb] – v4.4.1
-- [sqlite3][sqlite3] - v3.3.0
-- [PostgreSQL][postgresql] -v12.4
+- [PostgreSQL][postgresql] -v13.0
 - [Neo4j][neo4j] - v4.1.1
 - [Redis][redis] - v6.0.8
 
@@ -52,7 +50,6 @@ We will be running some code samples with Node.js. It's less important which ver
 [choc]: https://chocolatey.org/
 [brew]: https://brew.sh/
 [mongodb]: https://www.mongodb.com/try/download/community
-[sqlite3]: https://sqlite.org/download.html
 [postgresql]: https://www.postgresql.org/download/
 [neo4j]: https://neo4j.com/download-center/#community
 [redis]: https://redis.io/download

@@ -62,6 +62,26 @@ A big reason I throw out so much caution for caching is that databases are built
 
 Caching just adds so much indirection to your app. Now you whenver your API isn't responding correctly, you have to ask yourself "is this a stale cache?" God forbid you have multiple layers of caching (maybe you cache the database response, the external API response, and then cache the API response before it goes out) then you need to pick apart which cache was stale or if it's an underlying problem. It's also hard to avoid thundering herd problems. I taught you caching for a reason because sometimes we just do need it but it's a sharp implement; make sure you only use it when you actually need it and keep it as simple as you can.
 
+## Next Courses to Take
+
+Frontend Masters has so many wonderful courses and instructors to offer. Here a handful of ones that I'd recommend after taking this one if you want to further deepen skills
+
+### From me, Brian Holt
+
+- I want to get better at the command line: [Complete Intro to Linux and the CLI][cli]
+- I want to learn about the containers we've been using this whole time: [Complete Intro to Containers][containers]
+
+### From other amazing instructors
+
+- I want to get better at MongoDB from Scott Moss
+  - [Intro to MongoDB (including Mongoose ORM)][intro-mongo]
+  - [API Design with MongoDB][mongo]
+- I want to get better at GraphQL from Scott Moss
+  - [From the server][server-graphql]
+  - [From the client][client-graphql]
+  - [Advance GraphQL][advance-graphql]
+- [I want to get better at managing servers and cloud deployments][full-stack] from Jem Young
+
 ## Wrap Up
 
 Thank you for sticking through this tutorial and congrats on your unlocked achievement of understanding databases! Be sure tweet at me your success [here][twitter]. And if you found issues, particularly with grammar, [open a pull request!][pr]
@@ -71,4 +91,12 @@ I hope you enjoyed the course!
 [kafka]: https://kafka.apache.org/
 [harry]: https://twitter.com/hswolff/
 [twitter]: https://twitter.com/holtbt
-[dbs]: https://github.com/btholt/complete-intro-to-databases
+[pr]: https://github.com/btholt/complete-intro-to-databases
+[mongo]: https://frontendmasters.com/courses/api-design-nodejs-v3/
+[cli]: https://bit.ly/linux-cli
+[contaniers]: https://bit.ly/intro-containers
+[advance-graphql]: https://frontendmasters.com/courses/advanced-graphql-v2/
+[intro-mongo]: https://frontendmasters.com/courses/mongodb/
+[full-stack]: https://frontendmasters.com/courses/fullstack-v2/
+[client-graphql]: https://frontendmasters.com/courses/client-graphql-react/
+[server-graphql]: https://frontendmasters.com/courses/server-graphql-nodejs/
