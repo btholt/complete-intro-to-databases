@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS boards;
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
-  user_id SERIAL PRIMARY KEY,
+  user_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   username VARCHAR ( 25 ) UNIQUE NOT NULL,
   email VARCHAR ( 50 ) UNIQUE NOT NULL,
   full_name VARCHAR ( 100 ) NOT NULL,
@@ -13,13 +13,13 @@ CREATE TABLE users (
 );
 
 CREATE TABLE boards (
-  board_id SERIAL PRIMARY KEY,
+  board_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   board_name VARCHAR ( 50 ) UNIQUE NOT NULL,
   board_description TEXT NOT NULL
 );
 
 CREATE TABLE comments (
-  comment_id SERIAL PRIMARY KEY,
+  comment_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   user_id INT REFERENCES users(user_id) ON DELETE CASCADE,
   board_id INT REFERENCES boards(board_id) ON DELETE CASCADE,
   comment TEXT NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE comments (
 );
 
 CREATE TABLE rich_content (
-  content_id SERIAL PRIMARY KEY,
+  content_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   comment_id INT REFERENCES comments(comment_id) ON DELETE CASCADE,
   content JSON NOT NULL
 );
