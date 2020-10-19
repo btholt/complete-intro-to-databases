@@ -57,4 +57,11 @@ Please catch up with me on social media! Do note I'm not the best at responding 
 [web-dev]: https://frontendmasters.com/courses/web-development-v2/
 [peloton]: https://members.onepeloton.com/members/btholt/overview
 [niki]: https://twitter.com/ImNikiHolt
-[lcyc]: http://lcycwa.org/
+[lcyc]: http://lcycwa.org/donate
+[tw]: https://twitter.com/holtbt
+[gh]: https://github.com/btholt
+[li]: https://linkedin.com/in/btholt
+[course]: https://github.com/btholt/complete-intro-to-linux-and-the-cli
+[tlm]: https://thelastmile.org/donate/
+[ac]: https://anniecannons.org/invest
+[vwc]: https://vetswhocode.io/donate

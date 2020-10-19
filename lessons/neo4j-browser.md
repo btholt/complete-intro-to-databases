@@ -22,7 +22,7 @@ WHERE m.title = "Scott Pilgrim vs the World"
 RETURN p, m;
 ```
 
-![Neo4j browser query area](./images/neo4j-viz.png)
+![Neo4j browser data visualization](./images/neo4j-viz.png)
 
 You get a nice little graph view of your nodes and relationships. You can also see everything as a table if that's better for your data.
 
@@ -42,7 +42,7 @@ From there click on the query in the middle of the page.
 
 Lastly, quick the run button in the query area
 
-![Neo4j play movies query button](./images/neo4j-query.png)
+![Neo4j play movies run button](./images/neo4j-run.png)
 
 This will insert a lot of movies and people into your database. Alternatively, [here is a link][sample] to the same query you can copy / paste into either the browser or cypher-shell. It should be the exact same data so no need to do both.
 

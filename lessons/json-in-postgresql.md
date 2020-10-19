@@ -18,7 +18,7 @@ This would be possible to model with a normal schema but it'd come out pretty ug
 DROP TABLE IF EXISTS rich_content;
 
 CREATE TABLE rich_content (
-  content_id SERIAL PRIMARY KEY,
+  content_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   comment_id INT REFERENCES comments(comment_id) ON DELETE CASCADE,
   content JSON NOT NULL
 );

@@ -15,7 +15,7 @@ Let's jot down all of our schemas for our users, boards, and comments.
 ```sql
 
 CREATE TABLE users (
-  user_id SERIAL PRIMARY KEY,
+  user_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   username VARCHAR ( 25 ) UNIQUE NOT NULL,
   email VARCHAR ( 50 ) UNIQUE NOT NULL,
   full_name VARCHAR ( 100 ) NOT NULL,
@@ -24,13 +24,13 @@ CREATE TABLE users (
 );
 
 CREATE TABLE boards (
-  board_id SERIAL PRIMARY KEY,
+  board_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   board_name VARCHAR ( 50 ) UNIQUE NOT NULL,
   board_description TEXT NOT NULL
 );
 
 CREATE TABLE comments (
-  comment_id SERIAL PRIMARY KEY,
+  comment_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   user_id INT REFERENCES users(user_id) ON DELETE CASCADE,
   board_id INT REFERENCES boards(board_id) ON DELETE CASCADE,
   comment TEXT NOT NULL,

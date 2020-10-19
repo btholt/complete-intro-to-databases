@@ -1,7 +1,7 @@
 ---
 path: "/nodejs-app-with-mongodb"
 title: "Write a Node.js app with MongoDB"
-order: "2F"
+order: "2G"
 description: "Brian shows you a quick project to demonstrate how to translate these command line concepts into code with a Node.js app to query our pets database"
 section: "NoSQL"
 ---

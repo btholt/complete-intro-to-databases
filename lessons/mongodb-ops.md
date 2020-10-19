@@ -1,7 +1,7 @@
 ---
 path: "/mongodb-ops"
 title: "MongoDB Ops"
-order: "2G"
+order: "2H"
 description: "While developers don't necessarily need to know how to run a database cluster in production, it can be important to know how and why databases are being run the way they are. Brian gives a brief treatise on the various features of MongoDB's operations aspects."
 section: "NoSQL"
 ---
@@ -32,7 +32,7 @@ For example let's say you're storing all the personal social media information f
 
 ## Managed Cloud Version
 
-In all honesty, as a developer, it's much easier to just use a managed cloud service like [MongoDB Atlas][atlas], [Microsoft Azure Cosmos DB][cosmos], or [Amazon Web Services DocumentDB][documentdb]. These services will manage literally everything for you so you can just focus on writing your app. It's what I do every time I go run a production database.
+In all honesty, as a developer, it's much easier to just use a managed cloud service like [MongoDB Atlas][atlas], [Microsoft Azure Cosmos DB][cosmosdb], or [Amazon Web Services DocumentDB][documentdb]. These services will manage literally everything for you so you can just focus on writing your app. It's what I do every time I go run a production database.
 
 [documentdb]: https://aws.amazon.com/documentdb/
 [cosmosdb]: https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction

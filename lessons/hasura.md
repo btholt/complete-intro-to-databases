@@ -1,7 +1,7 @@
 ---
 path: "/hasura"
 title: "Hasura"
-order: "3G"
+order: "3H"
 description: "Brian gives a quick overview of a powerful tool to use with PostgreSQL, Hasura. Hasura is a service you will put in your cluster so you can query your PostgreSQL database with GraphQL."
 section: "SQL"
 ---

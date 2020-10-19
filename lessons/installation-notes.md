@@ -6,13 +6,13 @@ description: "Brian gives you notes on how you can install the various databases
 section: "Welcome"
 ---
 
-In this course we will be using five different databases: MongoDB, sqlite3, PostgreSQL, Neo4j, and Redis. These are software packages that you will have to download and get running and you have several options to do that. All of these will work on macOS, Windows, and Linux. I'll be sure to cover in depth how to do it on macOS and Windows and I assume all my Linux friends can adapt the macOS instructions to themselves.
+In this course we will be using four different databases: MongoDB, PostgreSQL, Neo4j, and Redis. These are software packages that you will have to download and get running and you have several options to do that. All of these will work on macOS, Windows, and Linux. I'll be sure to cover in depth how to do it on macOS and Windows and I assume all my Linux friends can adapt the macOS instructions to themselves.
 
 In every case, make sure you are getting the same version I am using. If you don't you will likely run into problems as the syntax and queries can change from version to version. Here are the version I'm using for this course.
 
 - MongoDB v4.4.1
 - PostgreSQL v13.0
-- Neo4j v4.1.1
+- Neo4j v4.1.3
 - Redis v6.0.8
 
 Here are a few of your options:
@@ -33,7 +33,7 @@ You can just head to all of the websites and install them yourself! I prefer to 
 
 - [MongoDB][mongodb] – v4.4.1
 - [PostgreSQL][postgresql] -v13.0
-- [Neo4j][neo4j] - v4.1.1
+- [Neo4j][neo4j] - v4.1.3
 - [Redis][redis] - v6.0.8
 
 ## Cloud solutions

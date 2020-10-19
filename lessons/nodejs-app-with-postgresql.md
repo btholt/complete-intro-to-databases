@@ -1,7 +1,7 @@
 ---
 path: "/nodejs-app-with-postgresql"
 title: "Node.js App with PostgreSQL"
-order: "3F"
+order: "3G"
 description: "To help transfer learnings from the command line to code, Brian shows you how to quickly write an app for our message board tables using Node.js"
 section: "SQL"
 ---

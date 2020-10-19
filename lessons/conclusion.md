@@ -93,8 +93,8 @@ I hope you enjoyed the course!
 [twitter]: https://twitter.com/holtbt
 [pr]: https://github.com/btholt/complete-intro-to-databases
 [mongo]: https://frontendmasters.com/courses/api-design-nodejs-v3/
-[cli]: https://bit.ly/linux-cli
-[contaniers]: https://bit.ly/intro-containers
+[cli]: https://frontendmasters.com/courses/linux-command-line/
+[containers]: https://frontendmasters.com/courses/complete-intro-containers/
 [advance-graphql]: https://frontendmasters.com/courses/advanced-graphql-v2/
 [intro-mongo]: https://frontendmasters.com/courses/mongodb/
 [full-stack]: https://frontendmasters.com/courses/fullstack-v2/

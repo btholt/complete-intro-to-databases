@@ -1,7 +1,7 @@
 ---
 path: "/nodejs-app-with-neo4j"
 title: "Node.js App with Neo4j"
-order: "4E"
+order: "4F"
 description: "Time to put some of that graph magic into practice! Put together with Brian an app to find the smallest path between two people in a graph."
 section: "Graph"
 ---

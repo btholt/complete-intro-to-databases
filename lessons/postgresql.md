@@ -77,7 +77,7 @@ Okay, so now we have a database and we're connected to it, let's create our firs
 
 ```sql
 CREATE TABLE users (
-  user_id SERIAL PRIMARY KEY,
+  user_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   username VARCHAR ( 25 ) UNIQUE NOT NULL,
   email VARCHAR ( 50 ) UNIQUE NOT NULL,
   full_name VARCHAR ( 100 ) NOT NULL,
@@ -89,11 +89,12 @@ CREATE TABLE users (
 So let's break this down
 
 - CREATE TABLE is the command we'll use to create a new table. We're naming it the users table
-- `user_id` will be an incrementing field The first users will have a user_if of 1, the second one will have user_id of 2, etc. That's what the `SERIAL` means. It's autoincrementing. The PRIMARY KEY part means it's what the table will be indexed on which means inherently that it is indexed.
+- `user_id` will be an incrementing field The first users will have a user_if of 1, the second one will have user_id of 2, etc. That's what the `GENERATED ALWAYS AS IDENTITY` means. It's autoincrementing. The PRIMARY KEY part means it's what the table will be indexed on which means inherently that it is indexed.
+- Previously PostgreSQL used a field type called `SERIAL` to describe the serially incrementing IDs. The `GENERATED AS ALWAYS` syntax is newer, more compliant to the generic SQL spec, and works better. Always use it over `SERIAL`.
 - Before, in MongoDB, we relied on the `_id` field to be that key field. PostgreSQL doesn't do that for you by default.
 - We created two VARCHARS which is the SQL way of saying string. The username will have a character limit of 25 and the email will have a charcter limit of 50. Each of them will be guaranteed unique (thanks to UNIQUE) and to not be omitted (thanks to NOT NULL).
 - They could still be empty strings with NOT NULL but you'd have to intentionally specify that.
-- full_name is not unique so you could have to Sally Rogers.
+- full_name is not unique so you could have two Sally Rogers.
 - We our last_login field it will be the last time the user logged in. We could use this later to clean out inactive accounts. Notice this doesn't have NOT NULL so when we create a new user they can have a null login time because they haven't logged in yet.
 - Lastly we'll provide it with a date via the created_on field so we can keep track of when a user was created.
 

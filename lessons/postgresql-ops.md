@@ -1,7 +1,7 @@
 ---
 path: "/postgresql-ops"
 title: "PostgreSQL Ops"
-order: "3H"
+order: "3I"
 description: "While it is not important for a developer to know how to precisely manage a database cluster in production, a developer does need to know a bit how about how it is done so they can plan accordingly when they write their code."
 section: "SQL"
 ---
