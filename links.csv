@@ -29,7 +29,7 @@ order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10
 5A,Key-Value Store,,,,,,,,,,,
 5B,Redis,,,,,,,,,,,
 5C,Redis Command Options,,,,,,,,,,,
-5C,Redis Data Types,https://redis.io/commands#hash,https://redis.io/topics/data-types-intro#redis-sorted-sets,https://btholt.github.io/four-semesters-of-cs-part-two/bloom-filters,https://redis.io/topics/data-types-intro#hyperloglogs,https://redis.io/topics/streams-intro,,,,,,
+5D,Redis Data Types,https://redis.io/commands#hash,https://redis.io/topics/data-types-intro#redis-sorted-sets,https://btholt.github.io/four-semesters-of-cs-part-two/bloom-filters,https://redis.io/topics/data-types-intro#hyperloglogs,https://redis.io/topics/streams-intro,,,,,,
 5E,More Redis Concepts,https://redis.io/topics/notifications,https://redis.io/topics/transactions,https://redis.io/topics/lru-cache,,,,,,,,
 5F,Node.js App with Redis,https://github.com/btholt/db-samples,,,,,,,,,,
 5G,Redis Ops,,,,,,,,,,,
