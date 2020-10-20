@@ -2,7 +2,7 @@
 path: "/redis-command-options"
 title: "Redis Command Options"
 order: "5C"
-description: ""
+description: "Useful when using Redis is the ability to define when documents get deleted with TTLs and when a query will fail with NX and XX."
 section: "Key-Value Store"
 ---
 

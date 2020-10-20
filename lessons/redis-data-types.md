@@ -2,7 +2,7 @@
 path: "/redis-data-types"
 title: "Redis Data Types"
 order: "5C"
-description: ""
+description: "Redis has a few different data types. Brian goes over when and where you would use each of them."
 section: "Key-Value Store"
 ---
 
