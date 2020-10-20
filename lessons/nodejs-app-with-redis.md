@@ -1,7 +1,7 @@
 ---
 path: "/nodejs-app-with-redis"
 title: "Node.js App with Redis"
-order: "5D"
+order: "5F"
 description: "Take the learnings from how to use Redis as a key-value store and cache from the command line to code! Brian whips up two examples of how and why you'd want to use Redis with Node.js."
 section: "Key-Value Store"
 ---

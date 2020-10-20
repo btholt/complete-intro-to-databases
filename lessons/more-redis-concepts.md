@@ -1,7 +1,7 @@
 ---
 path: "/more-redis-concepts"
 title: "More Redis Concepts"
-order: "5C"
+order: "5E"
 description: "This course only covers some of Redis's core capabilties but there a few more use cases a developer should know about Redis."
 section: "Key-Value Store"
 ---

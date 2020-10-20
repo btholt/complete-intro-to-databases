@@ -1,7 +1,7 @@
 ---
 path: "/neo4j-ops"
 title: "Neo4j Ops"
-order: "4F"
+order: "4G"
 description: "Brian talks for a second about what things to consider with Neo4j running in production."
 section: "Graph"
 ---

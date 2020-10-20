@@ -17,12 +17,10 @@ Let's dive into it. If you're running Docker like me, run the following commands
 ```bash
 docker run --name test-mongo -dit -p 27017:27017 --rm mongo:4.4.1
 
-docker exec -it test-mongo bash
+docker exec -it test-mongo mongo
 ```
 
-This will run a new MongoDB container at version 4.4.1 and call it `test-mongo` so we can reference it by name. We then on the second command run the command `bash` inside of that `test-mongo` container so we can do things inside of the container. The `mongo` container (which is the official container put together by MongoDB Inc themselves) runs MongoDB automatically so we don't need to do anything. We just need to connect inside the container and run our commands from within the container.
-
-You should see your prompt be something like `root@bdb685fea1e2:/# `. This means you're inside of the container (which is running Ubuntu 18.04) and now you can just run the command `mongo` to connect to your MongoDB running inside the container. At this point you should be dropped into an interactive MongoDB shell. Let's get ourselves acquainted with MongoDB!
+This will run a new MongoDB container at version 4.4.1 and call it `test-mongo` so we can reference it by name. We then on the second command run the command `mongo` inside of that `test-mongo` container so we can do things inside of the container. The `mongo` container (which is the official container put together by MongoDB Inc themselves) runs MongoDB automatically so we don't need to do anything. We just need to connect inside the container and run our commands from within the container. At this point you should be dropped into an interactive MongoDB shell. Let's get ourselves acquainted with MongoDB!
 
 ## Databases and Collections
 

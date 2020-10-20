@@ -1,7 +1,7 @@
 ---
 path: "/redis-ops"
 title: "Redis Ops"
-order: "5E"
+order: "5G"
 description: "Learn a few things about running Redis and how you as a coder can maximize your effectiveness with Redis."
 section: "Key-Value Store"
 ---
