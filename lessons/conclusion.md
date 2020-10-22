@@ -32,7 +32,7 @@ Also recognize that you can rarely anticipate fully where your hotspots and non-
 
 ## Familiarity
 
-People don't put enough wait into familiarity. We think as developer we can pick anything at the drop of a hat and that just isn't true. Learning new tech is expensive, both from a time perspective and from you're-going-to-cause-downtime-because-you-don't-know-all-the-problems perspective. I remember at Reddit we went with MySQL despite PostgreSQL being all the hotness at the time because the entire team had familiarity with MySQL and no one knew PostgreSQL at all. Be sure to properly weigh experience into your decision. Some knowledge is only won through experience.
+People don't put enough weight into familiarity. We think as developer we can pick anything at the drop of a hat and that just isn't true. Learning new tech is expensive, both from a time perspective and from you're-going-to-cause-downtime-because-you-don't-know-all-the-problems perspective. I remember at Reddit we went with MySQL despite PostgreSQL being all the hotness at the time because the entire team had familiarity with MySQL and no one knew PostgreSQL at all. Be sure to properly weigh experience into your decision. Some knowledge is only won through experience.
 
 ## Quality of Drivers
 
