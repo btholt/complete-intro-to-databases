@@ -67,6 +67,9 @@ This `\` notation is how you give admin commands to PostgreSQL through its `psql
 
 -- see available queries
 \h
+
+-- run a shell command
+\! ls && echo "hi from shell!"
 ```
 
 In case you didn't know, `--` is how you do comments in SQL.
