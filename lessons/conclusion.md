@@ -32,7 +32,7 @@ Also recognize that you can rarely anticipate fully where your hotspots and non-
 
 ## Familiarity
 
-People don't put enough wait into familiarity. We think as developer we can pick anything at the drop of a hat and that just isn't true. Learning new tech is expensive, both from a time perspective and from you're-going-to-cause-downtime-because-you-don't-know-all-the-problems perspective. I remember at Reddit we went with MySQL despite PostgreSQL being all the hotness at the time because the entire team had familiarity with MySQL and no one knew PostgreSQL at all. Be sure to properly weigh experience into your decision. Some knowledge is only won through experience.
+People don't put enough weight into familiarity. We think as developer we can pick anything at the drop of a hat and that just isn't true. Learning new tech is expensive, both from a time perspective and from you're-going-to-cause-downtime-because-you-don't-know-all-the-problems perspective. I remember at Reddit we went with MySQL despite PostgreSQL being all the hotness at the time because the entire team had familiarity with MySQL and no one knew PostgreSQL at all. Be sure to properly weigh experience into your decision. Some knowledge is only won through experience.
 
 ## Quality of Drivers
 
@@ -46,7 +46,7 @@ In this capacity, and very biasedly, I recommend you look into using a cloud-bas
 
 ## Be Boring
 
-I can't stress this enough. With your core infrastructure (a.k.a. anything that if it went down your app would go down) be as boring as you can tolerate. Instead of choosing what's hot, what's on Hacker News, what's being talked about on Twitter, what people are talking about at conferences, etc. just choose boring, tried-and-true technologies. Everything I've shown you here I think are mature enough to be considered boring. But make it boring to you by using them, finding problems, breaking them, and trying new things with them. Then they'll be boring to you too.
+I can't stress this enough. With your core infrastructure (a.k.a. anything that if it went down your app would go down) be as boring as you can tolerate. Instead of choosing what's hot, what's on Hacker News, what's being talked about on Twitter, what people are talking about at conferences, etc. just choose boring, tried-and-true technologies. Everything I've shown you here I think is mature enough to be considered boring. But make it boring to you by using them, finding problems, breaking them, and trying new things with them. Then they'll be boring for you too.
 
 If you're going to do something exciting, have a damn good reason why it's much better than a boring alternative. On the bleeding edge, you're the one who is bleeding.
 
@@ -60,7 +60,7 @@ Caching is frequently a band-aid on a worse problem. Instead of fixing inefficie
 
 A big reason I throw out so much caution for caching is that databases are built to handle a lot of load and if you use them with best practices you can get a lot of performance out of them. Problems often arise because we're not using the tools correctly (like writing bad queries or having something misconfigured) and if we can fix these we can achieve greater scale without the need for a cache.
 
-Caching just adds so much indirection to your app. Now you whenver your API isn't responding correctly, you have to ask yourself "is this a stale cache?" God forbid you have multiple layers of caching (maybe you cache the database response, the external API response, and then cache the API response before it goes out) then you need to pick apart which cache was stale or if it's an underlying problem. It's also hard to avoid thundering herd problems. I taught you caching for a reason because sometimes we just do need it but it's a sharp implement; make sure you only use it when you actually need it and keep it as simple as you can.
+Caching just adds so much indirection to your app. Now you whenever your API isn't responding correctly, you have to ask yourself "is this a stale cache?" God forbid you have multiple layers of caching (maybe you cache the database response, the external API response, and then cache the API response before it goes out) then you need to pick apart which cache was stale or if it's an underlying problem. It's also hard to avoid thundering herd problems. I taught you caching for a reason because sometimes we just do need it but it's a sharp implement; make sure you only use it when you actually need it and keep it as simple as you can.
 
 ## Next Courses to Take
 
