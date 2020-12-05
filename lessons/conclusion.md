@@ -56,7 +56,7 @@ We went over caching a bit but I wanted to say a few things about it.
 
 Caching is a very, very hard problem and causes a lot of problems. Make sure you _need_ caching before you just throw it in there. Don't assume you need caching. Need caching before you put it in. It's hard to know when to cache, how to long to cache, when to invalidate caches, when not to, etc. It's just hard and make sure you need it.
 
-Caching is frequently a band-aid on a worse problem. Instead of fixing inefficiencies in a system that would obviate the need for caching people just through a cache in front of something and ignore the problems in their systems. This often leads to bigger problems. Again, validate the need for caching and ask the question "if I just improved the performance of this system would I still need caching?"
+Caching is frequently a band-aid on a worse problem. Instead of fixing inefficiencies in a system that would obviate the need for caching people just throw a cache in front of something and ignore the problems in their systems. This often leads to bigger problems. Again, validate the need for caching and ask the question "if I just improved the performance of this system would I still need caching?"
 
 A big reason I throw out so much caution for caching is that databases are built to handle a lot of load and if you use them with best practices you can get a lot of performance out of them. Problems often arise because we're not using the tools correctly (like writing bad queries or having something misconfigured) and if we can fix these we can achieve greater scale without the need for a cache.
 
