@@ -14,7 +14,7 @@ order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10
 3B,PostgreSQL,https://www.postgresql.org/docs/9.5/datatype.html#DATATYPE-TABLE,,,,,,,,,,
 3C,Querying PostgreSQL,https://btholt.github.io/complete-intro-to-databases/sample-postgresql.sql,,,,,,,,,,
 3D,Complex SQL Queries,https://commons.wikimedia.org/wiki/File:SQL_Joins.svg,,,,,,,,,,
-3E,JSON in PostgreSQL,,,,,,,,,,,
+3E,JSON in PostgreSQL,https://www.citusdata.com/blog/2016/07/14/choosing-nosql-hstore-json-jsonb/,,,,,,,,,,
 3F,Indexes in PostgreSQL,https://www.postgresql.org/docs/13.0/indexes.html,,,,,,,,,,
 3G,Node.js App with PostgreSQL,https://github.com/btholt/db-samples,,,,,,,,,,
 3H,Hasura,https://hasura.io/,https://hasura.io/docs/1.0/graphql/core/getting-started/docker-simple.html,https://btholt.github.io/complete-intro-to-databases/sample-postgresql.sql,http://localhost:8080,,,,,,,
