@@ -103,6 +103,8 @@ async function init() {
 init();
 ```
 
+**Potential problem you may see:** if you're seeing the error `UnhandledPromiseRejectionWarning: MongoError: text index required for $text query (no such collection 'adoption.pets')` then you probably have the wrong database name in your code. In my example, I called my database `adoption`. If you didn't change the name of your database, it will be called `test`. If you don't know the name of your database, run `db` in your mongo shell and it should tell you. Once you discover the name of your database, change the line `const db = await client.db("<the name of your database here>");` so that it matches the name of your database.
+
 Let's go over a few notes here. To be clear, this is mostly to show you how to connect to MongoDB from code and to show you that all those queries that you learned over the last section apply almost without modification (there are some small differences)
 
 - We grab a MongoDB connection string out of an environment variable (so you can do that if it's running on a server out in the cloud) otherwise it'll use a local running copy like we will right now.

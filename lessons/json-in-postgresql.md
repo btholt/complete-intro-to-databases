@@ -6,13 +6,21 @@ description: "One of PostgreSQL's super powers is that it's able to store and qu
 section: "SQL"
 ---
 
+## Error in this course
+
+This course incorrectly chooses to use the `JSON` data type when it should have used the `JSONB` data type. Everything in this course will work with either one but when you're creating your own database you almost always (let's just say always) want to choose JSONB because it stores the data in a more queryable format and more optimized for querying whereas JSON is a glorified text field. So feel free to use `JSONB` everywhere where it says `JSON` or you can just use `JSON` knowing that when you go do it for yourself you're going to use `JSONB`. I've correct the references in this doc from JSON to JSONB but the videos will still says JSON.
+
+[For more info read this blog post about it][jsonb].
+
+## JSON
+
 Sometimes you have data that just doesn't have a nice schema to it. If you tried to fit it into a table database like PostgreSQL, you would end having very generic field names that would have to be interprepted by code or you'd end up with multiple tables to be able describe different schemas. This is one place where document based databases like MongoDB really shine; their schemaless database works really well in these situations.
 
-However PostgreSQL has a magic superpower here: the JSON data type. This allows you to put JSON objects into a column and then you can use SQL to query those objects.
+However PostgreSQL has a magic superpower here: the JSONB data type. This allows you to put JSONB objects into a column and then you can use SQL to query those objects.
 
 Let's make an example for our message board. You want to add a new feature that allows users to do rich content embeds in your message board. For starters they'll be able to embed polls, images, and videos but you can imagine growing that in the future so they can embed tweets, documents, and other things we haven't dreamed up yet. You want to maintain that future flexibility.
 
-This would be possible to model with a normal schema but it'd come out pretty ugly and hard to understand, and it's impossible to anticipate all our future growth plans now. This is where the `JSON` data type is going to really shine. These are the queries we ran to create them. (you don't need to run them again)
+This would be possible to model with a normal schema but it'd come out pretty ugly and hard to understand, and it's impossible to anticipate all our future growth plans now. This is where the `JSONB` data type is going to really shine. These are the queries we ran to create them. (you don't need to run them again)
 
 ```sql
 DROP TABLE IF EXISTS rich_content;
@@ -20,7 +28,7 @@ DROP TABLE IF EXISTS rich_content;
 CREATE TABLE rich_content (
   content_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   comment_id INT REFERENCES comments(comment_id) ON DELETE CASCADE,
-  content JSON NOT NULL
+  content JSONB NOT NULL
 );
 
 INSERT INTO rich_content
@@ -33,7 +41,7 @@ VALUES
   (485, '{ "type": "image", "url": "https://btholt.github.io/complete-intro-to-linux-and-the-cli/HEADER.png", "dimensions": { "height": 237 , "width": 3301 }}');
 ```
 
-- The `JSON` data type is the shining star here. This allows us to insert JSON objects to be queried later.
+- The `JSONB` data type is the shining star here. This allows us to insert JSON objects to be queried later.
 - PostgreSQL won't let you insert malformatted JSON so it does validate it for you.
 - Notice you can have as much nesting as you want. Any valid JSON is valid here.
 
@@ -108,3 +116,5 @@ FROM
 WHERE
   content -> 'dimensions' IS NOT NULL;
 ```
+
+[jsonb]: https://www.citusdata.com/blog/2016/07/14/choosing-nosql-hstore-json-jsonb/
