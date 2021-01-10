@@ -22,7 +22,7 @@ EXPLAIN MATCH (p:Person) WHERE p.born = 1967 RETURN p;
 
 You'll see it gives you a pretty in-depth answer that it will scan all 133 persons and then narrow it down to 13. Let's throw an index on Person's born attribute.
 
-``cql
+```cql
 CREATE INDEX FOR (p:Person) ON (p.born);
 EXPLAIN MATCH (p:Person) WHERE p.born = 1967 RETURN p;
 MATCH (p:Person) WHERE p.born = 1967 RETURN p;
