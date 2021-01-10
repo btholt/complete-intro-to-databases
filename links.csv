@@ -23,7 +23,7 @@ order,title,link0,link1,link2,link3,link4,link5,link6,link7,link8,link9,link10
 4B,Neo4j,https://neo4j.com/docs/cypher-manual/4.1/syntax/naming/,,,,,,,,,,
 4C,Neo4j Browser,http://localhost:7474,https://btholt.github.io/complete-intro-to-databases/sample-neo4j.cql,,,,,,,,,
 4D,Complex Neo4j Queries,https://btholt.github.io/complete-intro-to-databases/sample-neo4j.cql,https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon,,,,,,,,,
-4E,Indexes in Neo4j,,,,,,,,,,,
+4E,Indexes in Neo4j,https://neo4j.com/docs/cypher-manual/4.1/query-tuning/,,,,,,,,,,
 4F,Node.js App with Neo4j,,,,,,,,,,,
 4G,Neo4j Ops,,,,,,,,,,,
 5A,Key-Value Store,,,,,,,,,,,
