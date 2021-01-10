@@ -26,7 +26,7 @@ Pretty simple: find all pets named Fido. However this query does a really dastar
 db.pets.find({ name: "Fido" }).explain("executionStats");
 ```
 
-The two things to notice here are the strategy it used to do our query and how many records it looked at. In this case it looks at _every_ record in our database and it used a `COLLSCAN` strategy which is the same as a linear search aka a log n search. Not good! Let's build an index to make this work a lot better!
+The two things to notice here are the strategy it used to do our query and how many records it looked at. In this case it looks at _every_ record in our database and it used a `COLLSCAN` strategy which is the same as a linear search aka O(n) search. Not good! Let's build an index to make this work a lot better!
 
 ## Create an Index
 
