@@ -27,7 +27,7 @@ db.pets.aggregate([
 ]);
 ```
 
-- With the aggregation piplelines, you provide a step of things to do. In this case we only have one step, bucket pets into 0-2 years old, 3-8 years old, 9-15 years, and "very senior" (which is the default bucket.)
+- With the aggregation pipelines, you provide a step of things to do. In this case we only have one step, bucket pets into 0-2 years old, 3-8 years old, 9-15 years, and "very senior" (which is the default bucket.)
 - With the output you're defining what you want to pass to the next step. In this case we just want to sum them up by adding 1 to the count each time we see a pet that matches a bucket.
 
 This is all pets. We want just dogs. Let's add another stage.
