@@ -6,7 +6,7 @@ section: "Welcome"
 description: "Welcome to the Complete Intro to Databases! Brian goes over what you need to know to get started."
 ---
 
-Welcome! Hello! This is the Complete Intro to Databases. I'm so excited to share with you some of my knowledge that I've earned working in the field. Knowing how to properly use a database will give you a leg up in your career, both from the perspective of being to achieve more in your apps and from the perspective of being able to interview well for jobs that need to use databases. And if I'm being honest, I think learning how to and using these databases is a lot of fun. It's a fantastic feeling to throw some data into one of these databases and then be able to retrieve data and insight using various querying techniques and abilities.
+Welcome! Hello! This is the Complete Intro to Databases. I'm so excited to share with you some of my knowledge that I've earned working in the field. Knowing how to properly use a database will give you a leg up in your career, both from the perspective of being able to achieve more in your apps and from the perspective of being able to interview well for jobs that need to use databases. And if I'm being honest, I think learning how to and using these databases is a lot of fun. It's a fantastic feeling to throw some data into one of these databases and then be able to retrieve data and insight using various querying techniques and abilities.
 
 ## Who is this course for?
 
