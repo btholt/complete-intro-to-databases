@@ -105,9 +105,10 @@ init();
 
 **Potential problem you may see:** if you're seeing the error `UnhandledPromiseRejectionWarning: MongoError: text index required for $text query (no such collection 'adoption.pets')` you may have the wrong database name in your code. In my example, I called my database `adoption`. If you didn't change the name of your database, it will be called `test`. If you don't know the name of your database, run `db` in your mongo shell and it should tell you. Once you discover the name of your database, change the line `const db = await client.db("<the name of your database here>");` so that it matches the name of your database.  
 
-Another potential problem could be connecting to a prexisting MongoDB project that is shadowing port 27017.  If you have taken Scott Moss' [API Design in Node.js course][API Course] on Frontend Masters, you may have an instance of MongoDB still active and using port 27017 (Example: MongoDB GUI - Compass).  If this is the case, you can stop your MongoDB container, and update the port number to another open port such as port 27018.  Don't forget to update your connection string to the new port number.
+Another potential source for this error could be connecting to a prexisting MongoDB project that is shadowing port 27017.  If you have taken Scott Moss' [API Design in Node.js course][API Course] on Frontend Masters, you may have an instance of MongoDB still active and using port 27017 (Example: MongoDB GUI - Compass).  If this is the case, you can stop your MongoDB container, and update the port number to another open port such as port 27018.  Don't forget to update your connection string to the new port number.
 
 ```
+// At the terminal you are using for Docker:
 // See running processes
 docker ps 
 
