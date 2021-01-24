@@ -6,7 +6,7 @@ description: "The most common databases today are relational databases. Brian go
 section: "SQL"
 ---
 
-First things first: when I saw SQL databases I mean relational databases (also frequently abbreviated as RDBMS, relational database management system.) It's important to note that not all relational databases use SQL and not all non-relational databases don't use SQL (i.e. some NoSQL databases do use SQL.) However I'm using the most common terminology here to help you integrate with the information already out on the Internet. This is a case (like serverless) where marketing won and we ended up with weird terminology.
+First things first: when I say "SQL databases" I mean relational databases (also frequently abbreviated as RDBMS, relational database management system.) It's important to note that not all relational databases use SQL and not all non-relational databases don't use SQL (i.e. some NoSQL databases do use SQL.) However I'm using the most common terminology here to help you integrate with the information already out on the Internet. This is a case (like serverless) where marketing won and we ended up with weird terminology.
 
 ## What is a relational database
 
