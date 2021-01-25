@@ -25,10 +25,10 @@ docker exec -it my-neo4j cypher-shell
 This should drop you into an interactive with Neo4j. The first thing we're going to do is use a CREATE statement to make our first actor, Michael Cera. I love the movie Scott Pilgrim vs. the World so we're going to describe the actors in it here.
 
 ```cql
-CREATE (Person {name:'Michael Cera', born:1988});
+CREATE (p:Person {name:'Michael Cera', born:1988});
 ```
 
-You can see we created a new node with a label of Person and two attributes: a name of Michael Cera and a birth year of 1988. CREATE (Person {name:'Michael Cera', born:1988});
+You can see we created a new node with a label of Person and two attributes: a name of Michael Cera and a birth year of 1988.
 
 Now what if we want to find that same record?
 
