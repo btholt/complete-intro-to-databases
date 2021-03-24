@@ -15,7 +15,7 @@ Having a decent amount of familiarity with the databases I've shown you as well 
 - Do I have highly relational data where I'll many tables that need to join to other tables? SQL/Relational databases are probably best here
 - Do I have highly unstructured data where I'll have collections of related objects that are differently shaped? Document-based databases are going to shine here
 - Do I have data where I need to describe graphs of relationships? A graph database can work best here
-- Do I have simple needs of just retreiving data based on keys? Key-value stores can be a primary database in these cases
+- Do I have simple needs of just retrieving data based on keys? Key-value stores can be a primary database in these cases
 - Do I have pipelines of information that need to filter, split, combined, and republished? Something like [Apache Kafka][kafka] could be really helpful here
 
 Do none, some, or all of these fit? Do you have other considerations? Take a second to consider all of your data needs.
