@@ -77,7 +77,7 @@ db.pets.deleteMany({ type: "reptile", breed: "Havanese" });
 ## findAnd\*
 
 Occasionally you need to find a document _and_ update/delete/replace it at the same time. Instead of having to do two queries and thus have a race-condition of something modifying your document in the interim there are three commands that will allow you to do just that, findOneAndUpdate,
-findOneAndReplace, and findOneAndDelete. These work basically identically to updateOne, replaceOne, and deleteOne, they just return it at thend.
+findOneAndReplace, and findOneAndDelete. These work basically identically to updateOne, replaceOne, and deleteOne, they just return it at the end.
 
 ## bulkWrite
 
