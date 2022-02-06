@@ -44,6 +44,6 @@ All of these are commercial products. They're all fairly old products (my father
 
 ## PostgreSQL
 
-This takes us to PostgreSQL (said "post-gress"). PostgreSQL is another wonderful open source database that continues to gain lots of marketshare and how some absolutely killer features to it. We'll get into those as we go but know it scales, it is reach with great features, and is a very popular. It has illustrious users such as Apple, Microsoft, Etsy, and many others.
+This takes us to PostgreSQL (said "post-gress"). PostgreSQL is another wonderful open source database that continues to gain lots of marketshare and has some absolutely killer features to it. We'll get into those as we go but know it scales, it is reach with great features, and is a very popular. It has illustrious users such as Apple, Microsoft, Etsy, and many others.
 
 [turing]: https://stackoverflow.com/a/7580013
