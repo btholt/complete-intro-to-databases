@@ -55,7 +55,7 @@ SELECT comment_id, user_id, LEFT(comment, 20) AS preview FROM comments WHERE boa
 ```
 
 - Two new things here. The `LEFT` function will return the first X characters of a string (as you can guess, RIGHT returns the last X charcters). We'r doing this because this hard to read otherwise in the command line.
-- The `AS` keyword lets you rename how the string is projected. If we don't use AS here, the string will be returned under they key `left` which doesn't make sense.
+- The `AS` keyword lets you rename how the string is projected. If we don't use AS here, the string will be returned under the key `left` which doesn't make sense.
 
 Okay so you'll get something back like this:
 
