@@ -41,7 +41,8 @@
     "csv": "node csv.js",
     "dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.{js,jsx,md,css}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\""
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.12.1",
@@ -52,6 +53,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "gh-pages": "^3.2.3"
   }
 }
