@@ -20,6 +20,6 @@ jobs:
         with:
           branch: gh-pages
           folder: public
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
