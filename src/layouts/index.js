@@ -80,6 +80,10 @@ const TemplateWrapper = (props) => {
               {!frontmatter ? null : (
                 <h2>{`${frontmatter.section} – ${frontmatter.title}`}</h2>
               )}
+              <h2 class="button"><a href="https://frontendmasters.com/courses/databases/">
+                <span class="mobile-hidden">Complete Intro to Databases</span> Videos
+                <span class="icon">&nbsp;▶️&nbsp;</span></a>
+              </h2>
             </div>
             <div className="main">{props.children}</div>
           </div>
