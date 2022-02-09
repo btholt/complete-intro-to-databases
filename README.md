@@ -1,4 +1,4 @@
-[![Complete Intro to Databases](/static/WORDMARK-Small.png)][https://frontendmasters.com/courses/databases/]
+[![Complete Intro to Databases](/static/WORDMARK-Small.png)[https://frontendmasters.com/courses/databases/]
 
 [![Frontend Masters](/lessons/images/FrontendMastersLogo.png)][fem]
 
