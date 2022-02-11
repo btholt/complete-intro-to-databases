@@ -12,7 +12,7 @@ This course incorrectly chooses to use the `JSON` data type when it should have 
 
 [For more info read this blog post about it][jsonb].
 
-## JSON
+## JSONB
 
 Sometimes you have data that just doesn't have a nice schema to it. If you tried to fit it into a table database like PostgreSQL, you would end having very generic field names that would have to be interprepted by code or you'd end up with multiple tables to be able describe different schemas. This is one place where document based databases like MongoDB really shine; their schemaless database works really well in these situations.
 
