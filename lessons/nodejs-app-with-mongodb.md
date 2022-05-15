@@ -103,7 +103,26 @@ async function init() {
 init();
 ```
 
-**Potential problem you may see:** if you're seeing the error `UnhandledPromiseRejectionWarning: MongoError: text index required for $text query (no such collection 'adoption.pets')` then you probably have the wrong database name in your code. In my example, I called my database `adoption`. If you didn't change the name of your database, it will be called `test`. If you don't know the name of your database, run `db` in your mongo shell and it should tell you. Once you discover the name of your database, change the line `const db = await client.db("<the name of your database here>");` so that it matches the name of your database.
+**Potential problem you may see:** if you're seeing the error `UnhandledPromiseRejectionWarning: MongoError: text index required for $text query (no such collection 'adoption.pets')` you may have the wrong database name in your code. In my example, I called my database `adoption`. If you didn't change the name of your database, it will be called `test`. If you don't know the name of your database, run `db` in your mongo shell and it should tell you. Once you discover the name of your database, change the line `const db = await client.db("<the name of your database here>");` so that it matches the name of your database.  
+
+Another potential source for this error could be connecting to a prexisting MongoDB project that is shadowing port 27017.  If you have taken Scott Moss' [API Design in Node.js course][API Course] on Frontend Masters, you may have an instance of MongoDB still active and using port 27017 (Example: MongoDB GUI - Compass).  If this is the case, you can stop your MongoDB container, and update the port number to another open port such as port 27018.  Don't forget to update your connection string to the new port number.
+
+```
+// At the terminal you are using for Docker:
+// See running processes
+docker ps 
+
+// Stop the container
+docker stop test-mongo
+
+// Update the port number for the image, where 27018 is the new port exposed outside the container
+docker run --name test-mongo -dit -p 27018:27017 --rm Mongo:4.4.1
+
+// Start up the container again
+docker exec -it test-mongo mongo
+
+// Now follow the course steps to repopulate the documents, and recreate the text index
+```
 
 Let's go over a few notes here. To be clear, this is mostly to show you how to connect to MongoDB from code and to show you that all those queries that you learned over the last section apply almost without modification (there are some small differences)
 
@@ -115,3 +134,4 @@ Let's go over a few notes here. To be clear, this is mostly to show you how to c
 That's it! That's a quick Node.js server that connects to MongoDB!
 
 [samples]: https://github.com/btholt/db-samples
+[API Course]: https://frontendmasters.com/courses/api-design-nodejs-v3/
