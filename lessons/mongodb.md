@@ -63,7 +63,7 @@ db.pets.insertMany(
       "Zero",
       "Santa's Little Helper",
       "Snoopy",
-    ][index % 9],
+    ][index % 11],
     type: ["dog", "cat", "bird", "reptile"][index % 4],
     age: (index % 18) + 1,
     breed: [
