@@ -113,7 +113,7 @@ You also have $or, $nor, and \$not available to you. Keep in mind that $not and 
 
 These won't be useful now but I just wanted to let you know that you can query by type (see if something is a number, array, object, etc.) with $type and you can query if a document has a field or not with $exists.
 
-There's a bunch more you can do too. MongoDB even has [geospatial operators][geo] so you can query if two points on the globe are close to each other!
+There's a bunch more you can do too. MongoDB even has [geospatial operators](https://www.mongodb.com/docs/manual/geospatial-queries/) so you can query if two points on the globe are close to each other!
 
 ## Sorts
 
