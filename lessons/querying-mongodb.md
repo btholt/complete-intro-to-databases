@@ -60,7 +60,7 @@ db.pets.find({ type: "dog" }).limit(40);
 it; // after this the cursor will end
 ```
 
-`count` lets you figure our how many of something there are. `limit` lets the cursor know when you want to stop. But what if you just want to get everything all at once? Try `toArray`
+`count` lets you figure out how many of something there are. `limit` lets the cursor know when you want to stop. But what if you just want to get everything all at once? Try `toArray`
 
 ```javascript
 db.pets.find({ type: "dog" }).limit(40).toArray();
