@@ -6,7 +6,7 @@ description: "Brian wraps up the course and says his parting, wise words."
 section: "Conclusion"
 ---
 
-Congratulations! You survived a tidal wave of information coming your way about how to store data in a variety different settings. You have enough context now to make a good judgment call on the best way to store you data n a variety of different settings and needs. Let's go over a few more considerations for you to make as you're considering decisions to choose when and where.
+Congratulations! You survived a tidal wave of information coming your way about how to store data in a variety different settings. You have enough context now to make a good judgment call on the best way to store you data in a variety of different settings and needs. Let's go over a few more considerations for you to make as you're considering decisions to choose when and where.
 
 ## Paradigm
 
