@@ -6,16 +6,16 @@ description: "Brian wraps up the course and says his parting, wise words."
 section: "Conclusion"
 ---
 
-Congratulations! You survived a tidal wave of information coming your way about how to store data in a variety different settings. You have enough context now to make a good judgment call on the best way to store you data n a variety of different settings and needs. Let's go over a few more considerations for you to make as you're considering decisions to choose when and where.
+Congratulations! You survived a tidal wave of information coming your way about how to store data in a variety of different settings. You have enough context now to make a good judgment call on the best way to store your data in a variety of different settings and needs. Let's go over a few more considerations for you to make as you're considering decisions to choose when and where.
 
 ## Paradigm
 
-Having a decent amount of familiarity with the databases I've shown you as well as a few others, the first thing I stop to think about with which database I want to use with a project is what paradigm of data do I have?
+Having a decent amount of familiarity with the databases I've shown you as well as a few others, the first thing I stop to think about with which database I want to use with a project is: What paradigm of data do I have?
 
 - Do I have highly relational data where I'll many tables that need to join to other tables? SQL/Relational databases are probably best here
 - Do I have highly unstructured data where I'll have collections of related objects that are differently shaped? Document-based databases are going to shine here
 - Do I have data where I need to describe graphs of relationships? A graph database can work best here
-- Do I have simple needs of just retreiving data based on keys? Key-value stores can be a primary database in these cases
+- Do I have simple needs of just retrieving data based on keys? Key-value stores can be a primary database in these cases
 - Do I have pipelines of information that need to filter, split, combined, and republished? Something like [Apache Kafka][kafka] could be really helpful here
 
 Do none, some, or all of these fit? Do you have other considerations? Take a second to consider all of your data needs.
@@ -24,7 +24,7 @@ Do none, some, or all of these fit? Do you have other considerations? Take a sec
 
 This has as much to do with _which database_ you're choosing as it does with _how you architect_ your data with whatever database you're choosing.
 
-Here's a great example (shout to my conversation with [Harry Wolff], director at MongoDB Inc that inspired this.) If you have relational data but it's almost never read and more frequently read and your other usecases are more favored to using a document-based database, MongoDB is actually a fine choice to make in that case. MongoDB does do joins, it's just not so optimized as something like PostgreSQL is for it.
+Here's a great example (shout to my conversation with [Harry Wolff](https://www.linkedin.com/in/hswolff/), director at MongoDB Inc that inspired this.) If you have relational data but it's almost never read and more frequently read and your other usecases are more favored to using a document-based database, MongoDB is actually a fine choice to make in that case. MongoDB does do joins, it's just not so optimized as something like PostgreSQL is for it.
 
 Think a lot about where your hotspots of reads and writes are. Optimize for those. You can tolerate slowness and inefficiency in areas where they don't get run frequently.
 
