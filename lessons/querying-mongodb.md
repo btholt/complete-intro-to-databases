@@ -133,7 +133,7 @@ Lastly, to conclude our little lesson querying (there's still a lot more you can
 db.pets.find({ type: "dog" }, { name: 1, breed: 1 });
 ```
 
-The `1` means "definitely include this". In thise case, we're only including name and breed. If you leave something out (like age) then it doesn't come along for the ride. Notice that `_id` does come along. If you don't want that, you have to explictly exclude it
+The `1` means "definitely include this". In thise case, we're only including name and breed. If you leave something out (like age) then it doesn't come along for the ride. Notice that `_id` does come along. If you don't want that, you have to explicitly exclude it
 
 ```javascript
 db.pets.find({ type: "dog" }, { name: 1, breed: 1, _id: 0 });
