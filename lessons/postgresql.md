@@ -95,7 +95,7 @@ So let's break this down
 - `user_id` will be an incrementing field The first users will have a user_id of 1, the second one will have user_id of 2, etc. That's what the `GENERATED ALWAYS AS IDENTITY` means. It's autoincrementing. The PRIMARY KEY part means it's what the table will be indexed on which means inherently that it is indexed.
 - Previously PostgreSQL used a field type called `SERIAL` to describe the serially incrementing IDs. The `GENERATED AS ALWAYS` syntax is newer, more compliant to the generic SQL spec, and works better. Always use it over `SERIAL`.
 - Before, in MongoDB, we relied on the `_id` field to be that key field. PostgreSQL doesn't do that for you by default.
-- We created two VARCHARS which is the SQL way of saying string. The username will have a character limit of 25 and the email will have a charcter limit of 50. Each of them will be guaranteed unique (thanks to UNIQUE) and to not be omitted (thanks to NOT NULL).
+- We created two VARCHARS which is the SQL way of saying string. The username will have a character limit of 25 and the email will have a character limit of 50. Each of them will be guaranteed unique (thanks to UNIQUE) and to not be omitted (thanks to NOT NULL).
 - They could still be empty strings with NOT NULL but you'd have to intentionally specify that.
 - full_name is not unique so you could have two Sally Rogers.
 - We our last_login field it will be the last time the user logged in. We could use this later to clean out inactive accounts. Notice this doesn't have NOT NULL so when we create a new user they can have a null login time because they haven't logged in yet.
